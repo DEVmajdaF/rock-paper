@@ -1,0 +1,112 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  background-color: #1f3756;
+}
+
+.container {
+  height: 950px;
+}
+.container .header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border: 3px solid white;
+  border-radius: 3px;
+  padding: 7px 20px;
+  width: 50%;
+  margin: 18px auto;
+  margin-bottom: 100px;
+}
+.container .header .score {
+  border-radius: 4px;
+  box-shadow: 2px 4px 16px 0px rgba(0, 0, 0, 0.75);
+  width: 111px;
+  height: 92px;
+  background-color: white;
+}
+.container .header .score h1 {
+  text-align: center;
+  color: #0f0ff7;
+  background-color: white;
+}
+.container .header .score p {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 40px;
+  color: #414f77;
+  background-color: white;
+}
+.container #choices {
+  width: 100%;
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  visibility: hidden;
+}
+.container #choices #play-again {
+  width: 200px;
+  height: 50px;
+  border-radius: 12px;
+  color: #091529;
+  background-color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+}
+.container .pics {
+  margin-bottom: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 2fr 2fr;
+}
+.container .pics .pic1 {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  justify-self: center;
+  cursor: pointer;
+  width: 45%;
+}
+.container .pics .pic2 {
+  grid-column: 3/4;
+  grid-row: 1/2;
+  justify-self: center;
+  cursor: pointer;
+  width: 45%;
+}
+.container .pics .pic3 {
+  grid-column: 2/4;
+  grid-row: 2/3;
+  justify-self: center;
+  align-self: center;
+  cursor: pointer;
+  width: 24%;
+}
+.container .rules button {
+  padding: 14px 45px;
+  margin: 10px;
+  float: right;
+  background-color: rgba(255, 0, 0, 0);
+  border: 3px solid white;
+  border-radius: 10px;
+  color: white;
+  outline: none;
+}
+.container .rules .rules-image {
+  display: none;
+}
+.container .rules .rules-image img {
+  background-color: white;
+  padding: 80px;
+  border-radius: 10%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -232px;
+  margin-top: -215px;
+}
+
+/*# sourceMappingURL=style.css.map */

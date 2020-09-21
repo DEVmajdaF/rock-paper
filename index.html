@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <!--HEADER -SCORE-->
+
+        <div class="header">
+            <div class="logo"><img src="images/logo.svg" alt="logo"></div>
+            <div class="score">
+                <H1>Score</H1>
+                <p id="Global-score" class="Global-score">0</p>
+            </div>
+
+        </div>
+        <!--Choices-->
+        <div id="choices">
+            <div>
+                <h2>You Picked</h2>
+                <img id="user" src="" width="17%" alt="">
+            </div>
+
+            <div>
+                <h1 id="result"></h1>
+                <input type="submit" value="Play again" id="play-again" onclick="playagain()" />
+            </div>
+            <div>
+                <h1> The House Picked</h2>
+                    <img id="computer" src="" alt="" width="17%">
+            </div>
+        </div>
+
+
+
+
+
+        <!--pictures of game-->
+        <div class="pics" id="pics">
+
+            <img onclick=first() class="pic1" src="images/icon-rock.png" alt="">
+            <img onclick=second() class="pic2" src="images/icon-paper.png" alt="">
+            <img onclick=third() class="pic3" src="images/icon-scissor.png" alt="">
+
+        </div>
+
+        <!--Rules ABOUT Game-->
+        <div class="rules">
+            <button onclick="forToggle()" id="rules-btn">Rules</button>
+            <div class="rules-image" id="rules-image">
+                <img src="images/image-rules.svg" alt="rules">
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
